@@ -71,6 +71,7 @@ const index = () => {
       silver: Number(silver),
     };
     setData([newData, ...datas]);
+    setFilteredData([newData, ...datas])
     setGold("");
     setName("");
     setSilver("");
