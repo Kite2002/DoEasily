@@ -79,7 +79,7 @@ const index = () => {
   };
 
   return (
-    <View className=" flex pb-[100px]">
+    <View className=" flex pb-[100px] flex-1">
       <Modal
         animationType="slide"
         transparent={true}
@@ -146,7 +146,7 @@ const index = () => {
         </Text>
       </View>
 
-      <ScrollView className="flex mt-3 px-6">
+      <ScrollView className="flex mt-3 px-6 min-h-full">
         <View className="p-4 shadow shadow-black border-slate-300 border-4 mb-3 bg-white rounded-lg mt-7">
           <Text className="text-xl font-bold text-slate-500">Total</Text>
           <View className="flex flex-row mt-4 justify-between">
@@ -232,7 +232,7 @@ const index = () => {
       <TouchableOpacity
       
         onPress={() => setModalVisible(!modalVisible)}
-        className="absolute bottom-[150px] right-[20px] bg-white rounded-full"
+        className="absolute bottom-[40px] right-[20px] bg-white rounded-full"
       >
         <Ionicons name="add-circle" size={60} color="#64748b" />
       </TouchableOpacity>
